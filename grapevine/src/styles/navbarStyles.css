@@ -1,0 +1,25 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+#logo {
+  display: flex;
+  justify-content: flex-start;
+  font-size: 35px;
+}
+
+.navbar ul {
+  padding: 0;
+}
+
+.extra-links {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav-link {
+  text-decoration: none;
+  display: inline-block;
+  padding: 1rem;
+}
