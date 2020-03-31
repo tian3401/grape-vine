@@ -6,7 +6,7 @@
 #logo {
   display: flex;
   justify-content: flex-start;
-  font-size: 35px;
+  font-size: 3rem;
 }
 
 .navbar ul {
@@ -16,10 +16,19 @@
 .extra-links {
   display: flex;
   justify-content: flex-end;
+  align-items: center;
+  font-size: 1.5rem;
 }
 
 .nav-link {
-  text-decoration: none;
   display: inline-block;
   padding: 1rem;
+}
+.nav-link .link {
+  text-decoration: none;
+  color: black;
+}
+.nav-link .link:hover {
+  text-decoration: none;
+  font-weight: bolder;
 }
