@@ -3,7 +3,7 @@
   justify-content: space-between;
 }
 
-#logo {
+#name {
   display: flex;
   justify-content: flex-start;
   font-size: 3rem;
@@ -29,6 +29,57 @@
   color: black;
 }
 .nav-link .link:hover {
-  text-decoration: none;
   font-weight: bolder;
+}
+
+.vine-container {
+  margin-top: 3rem;
+  margin-bottom: 0;
+}
+
+.vine-logo {
+  display: inline-block;
+}
+
+.vine {
+  width:1px;
+  justify-content: center;
+  align-items: center;
+  border-bottom:2px solid #000;
+  text-decoration: none;
+  -webkit-animation: increase 3s;
+  -moz-animation:    increase 3s; 
+  -o-animation:      increase 3s; 
+  animation:         increase 3s; 
+  animation-fill-mode: forwards;
+}
+
+@keyframes increase {
+  100% {
+      width: 250px;
+  }
+}
+
+li .dot {
+  display: inline-block;
+  margin: 2px;
+  width: 6px;
+  height: 6px;
+  background: green;
+  border-radius: 45%;
+  transition: width 1s ease;
+  -webkit-animation: run 3s 3s;
+  -webkit-animation-fill-mode: forwards;
+  animation: run 3s 3s; 
+  animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes run {
+  from{ transform: translateX(0);}
+  to{transform: translateX(220px)}
+}
+
+@keyframes run {
+  from{ transform: translateX(0);}
+  to{transform: translateX(220px)}
 }
