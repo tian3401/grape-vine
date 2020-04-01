@@ -7,6 +7,13 @@
   display: flex;
   justify-content: flex-start;
   font-size: 3rem;
+  font-weight: 600;
+  
+}
+
+#name .link:hover {
+  color: green;
+  /* font-weight: 500; */
 }
 
 .navbar ul {
@@ -28,7 +35,7 @@
   text-decoration: none;
   color: black;
 }
-.nav-link .link:hover {
+.extra-links .nav-link .link:hover {
   font-weight: bolder;
 }
 
@@ -82,4 +89,8 @@ li .dot {
 @keyframes run {
   from{ transform: translateX(0);}
   to{transform: translateX(220px)}
+}
+/* create bounce first*/
+@keyframes curl {
+
 }
