@@ -10,7 +10,7 @@ import Shareform from './components/Shareform'
 
 export default function App() {
   return (
-    <div class="App">
+    <div className="App">
       <Router>
         <Navbar/>
         <Switch>
