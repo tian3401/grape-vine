@@ -6,6 +6,7 @@ import {
   Switch,
   Route,
 } from 'react-router-dom'; 
+import Shareform from './components/Shareform'
 
 export default function App() {
   return (
@@ -39,7 +40,13 @@ function CreateRoute(props) {
 }
 
 function Share() {
-  return <h2>Share</h2>
+  return (
+  <div>
+    <h1 className="title">Thanks for Sharing</h1>
+    <Shareform/>
+  </div>
+ 
+  )
   
 }
 function Explore() {
