@@ -8,12 +8,10 @@
   justify-content: flex-start;
   font-size: 3rem;
   font-weight: 600;
-  
 }
 
 #name .link:hover {
   color: green;
-  /* font-weight: 500; */
 }
 
 .navbar ul {
@@ -54,17 +52,11 @@
   align-items: center;
   border-bottom:2px solid #000;
   text-decoration: none;
-  -webkit-animation: increase 3s;
-  -moz-animation:    increase 3s; 
-  -o-animation:      increase 3s; 
-  animation:         increase 3s; 
+  -webkit-animation: grow 3s;
+  -moz-animation:    grow 3s; 
+  -o-animation:      grow 3s; 
+  animation:         grow 3s; 
   animation-fill-mode: forwards;
-}
-
-@keyframes increase {
-  100% {
-      width: 250px;
-  }
 }
 
 li .dot {
@@ -75,20 +67,24 @@ li .dot {
   background: green;
   border-radius: 45%;
   transition: width 1s ease;
-  -webkit-animation: run 3s 3s;
-  -webkit-animation-fill-mode: forwards;
-  animation: run 3s 3s; 
-  animation-fill-mode: forwards;
+  -webkit-animation: run 3s forwards 3s;
+  animation: run 3s forwards 3s; 
+}
+
+@keyframes grow {
+  100% {
+      width: 250px;
+  }
 }
 
 @-webkit-keyframes run {
-  from{ transform: translateX(0);}
-  to{transform: translateX(220px)}
+  from{transform: translateX(0);}
+  to{transform: translateX(220px);}
 }
 
 @keyframes run {
-  from{ transform: translateX(0);}
-  to{transform: translateX(220px)}
+  from{transform: translateX(0);}
+  to{transform: translateX(220px);}
 }
 /* create bounce first*/
 @keyframes curl {
