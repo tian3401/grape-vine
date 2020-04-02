@@ -11,7 +11,7 @@
 }
 
 #name .link:hover {
-  color: green;
+  color: rgb(28, 148, 28);
 }
 
 .navbar ul {
@@ -64,7 +64,7 @@ li .dot {
   margin: 2px;
   width: 6px;
   height: 6px;
-  background: green;
+  background: rgb(28, 148, 28);
   border-radius: 45%;
   transition: width 1s ease;
   -webkit-animation: run 3s forwards 3s;
