@@ -6,7 +6,7 @@ import {
   Switch,
   Route,
 } from 'react-router-dom'; 
-import Shareform from './components/Shareform'
+import Share from './pages/Share'
 
 export default function App() {
   return (
@@ -25,8 +25,52 @@ export default function App() {
 
 function Home() {
   return(
-    <div></div>
+    <div>
+      <h1 className="title">Connect and Share</h1>
+      <p className="info">Grapevine is an open free application meant to gather and share information with the community.</p>
+      <div className="matrix">
+        <Matrix/>
+      </div>
+    </div>
   )
+}
+
+function Box(props) {
+  return (
+    <div className="box" id={props.position}>
+      {props.value}
+    </div>
+  );
+
+}
+
+class Matrix extends React.Component {
+  renderBox(data) {
+    return(
+      <Box position={data}/>
+    );
+  }
+  render() {
+    return(
+      <div>
+        <div className="matrix-row">
+          {this.renderBox("top-left")}
+          {this.renderBox("top-center")}
+          {this.renderBox("top-right")}
+        </div>
+        <div className="matrix-row">
+          {this.renderBox("middle-left")}
+          {this.renderBox("middle-center")}
+          {this.renderBox("middle-right")}
+        </div>
+        <div className="matrix-row">
+          {this.renderBox("bottom-left")}
+          {this.renderBox("bottom-center")}
+          {this.renderBox("bottom-right")}
+        </div>
+      </div>
+    )
+  }
 }
 
 function CreateRoute(props) {
@@ -39,16 +83,9 @@ function CreateRoute(props) {
   )
 }
 
-function Share() {
-  return (
-  <div>
-    <h1 className="title">Thanks for Sharing</h1>
-    <Shareform/>
-  </div>
- 
-  )
-  
-}
+
 function Explore() {
-  return <h2>Explore</h2>
+  return (
+  <h1 className="title">Explore</h1>
+  )
 }
