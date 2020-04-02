@@ -37,3 +37,17 @@
   width: 8rem;
   border: 2px solid rgb(204, 204, 204);
 }
+
+.intro {
+  display: flex;
+  justify-content: center;
+}
+
+.intro > div {
+  margin: 2rem;
+}
+
+.message-details ul > li {
+  list-style-type: none;
+  margin: 0.5rem;
+}

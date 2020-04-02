@@ -27,10 +27,20 @@ function Home() {
   return(
     <div>
       <h1 className="title">Connect and Share</h1>
-      <p className="info">Grapevine is an open free application meant to gather and share information with the community.</p>
-      <div className="matrix">
-        <Matrix/>
+      <p className="info">"Grapevine is an open free application meant to gather and share information with the community."</p>
+      <div className="intro">
+        <div className="matrix">
+          <Matrix/>
+        </div>
+        <div className="message-details">
+          <ul>
+            <li>Everyday connect to someone new.</li>
+            <li>Form a discussion around data you contribute</li>
+            <li>See what data others have contributed</li>
+          </ul>
+        </div>
       </div>
+      
     </div>
   )
 }
