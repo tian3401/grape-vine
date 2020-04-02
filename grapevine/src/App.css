@@ -7,5 +7,33 @@
 .title {
   display: flex;
   justify-content: center;
+  margin: 2rem;
 }
 
+.info {
+  display: flex;
+  justify-content: center;
+  margin: 2rem;
+}
+
+.matrix {
+  display: flex;
+  justify-content: center;
+}
+
+.matrix-row:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.box {
+  background: #ffffff;
+  float: left;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  height: 8rem;
+  width: 8rem;
+  border: 2px solid rgb(204, 204, 204);
+}
