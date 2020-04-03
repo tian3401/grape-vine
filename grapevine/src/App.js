@@ -38,12 +38,17 @@ function Home() {
             <li>Form a discussion around data you contribute</li>
             <li>See what data others have contributed</li>
           </ul>
+          <button className="signup-btn" onClick={() => {
+            console.log('clicked')
+          }}>
+            Signup
+          </button>
         </div>
       </div>
-      
     </div>
   )
 }
+
 
 const Box = (props) => {
   return (

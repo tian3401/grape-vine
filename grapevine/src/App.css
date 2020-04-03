@@ -57,3 +57,20 @@
   margin: 0.5rem;
 }
 
+.signup-btn {
+  height: 2.5rem;
+  width: 10rem;
+  border: 1px solid #666;
+  border-radius: 25px;
+  outline: none;
+  background-color: rgb(28, 148, 28);
+  color: #ffffff;
+  font-weight: 800;
+  font-size: 1rem;
+}
+
+.signup-btn:hover {
+  background-color:  #735cf5;
+  transition: background-color 0.75s ease-out;
+}
+
