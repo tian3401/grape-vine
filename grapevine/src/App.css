@@ -32,10 +32,15 @@
   float: left;
   margin-right: -1px;
   margin-top: -1px;
-  padding: 0;
+  padding: 0.5rem;
   height: 8rem;
   width: 8rem;
   border: 2px solid rgb(204, 204, 204);
+}
+
+.avatar-img {
+  height: 90%;
+  width: 90%;
 }
 
 .intro {
@@ -51,3 +56,4 @@
   list-style-type: none;
   margin: 0.5rem;
 }
+
