@@ -28,8 +28,8 @@ label {
 }
 
 .grape:hover {
-  -webkit-animation: bloat 1s ease 1s forwards;
-  animation: bloat 1s ease 1s forwards; 
+  -webkit-animation: bloat 1s ease-in-out 1s forwards;
+  animation: bloat 1s ease-in-out 1s forwards; 
 }
 
 .clicked-grape{
@@ -55,7 +55,7 @@ label {
 
 input[type='submit'] {
   grid-column-start: 2;
-  height: 2rem;
+  height: 2.5rem;
   width: 10rem;
   justify-self: center;
   border: 1px solid #666;
