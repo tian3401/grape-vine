@@ -7,13 +7,13 @@
   width: 100%;
 }
 
-label {
+.form > label {
   font-size: 1.5rem;
   text-align: right;
   margin: auto 0;
 }
 
-.grape {
+.form__input--round {
   margin: 0.5rem; 
   padding: 0.75rem;
   height: 3rem;
@@ -21,18 +21,18 @@ label {
   border: 0.2rem solid rgb(206, 204, 204);
   border-radius: 25px;
   outline: none;
-  background: #735cf5;
+  background: var(--primary-theme-color);
   line-height: 1.5;
   color: #ffffff;
   font-weight: 800;
 }
 
-.grape:hover {
+.form__input--round:hover {
   -webkit-animation: bloat 1s ease-in-out 1s forwards;
   animation: bloat 1s ease-in-out 1s forwards; 
 }
 
-.clicked-grape{
+.form__input-round_clicked {
   margin: 0.5rem; 
   padding: 0.75rem;
   height: 3rem;
@@ -40,7 +40,7 @@ label {
   border: 0.2rem solid rgb(206, 204, 204);
   border-radius: 25px;
   outline: none;
-  background: #735cf5;
+  background: var(--primary-theme-color);
   line-height: 1.5;
   color: #ffffff;
   font-weight: 800;

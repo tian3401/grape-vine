@@ -1,6 +1,7 @@
 .navbar {
   display: flex;
   justify-content: space-between;
+  padding: 0;
 }
 
 #name {
@@ -11,42 +12,39 @@
 }
 
 #name .link:hover {
-  color: rgb(28, 148, 28);
+  font-weight: 500;
+  color: var(--secondary-theme-color);
 }
 
-.navbar ul {
-  padding: 0;
-}
-
-.extra-links {
+.navbar__links--container {
   display: flex;
   justify-content: flex-end;
   align-items: center;
   font-size: 1.5rem;
 }
 
-.nav-link {
+.navbar__links {
   display: inline-block;
   padding: 1rem;
 }
-.nav-link .link {
+.navbar__links .link {
   text-decoration: none;
   color: black;
 }
-.extra-links .nav-link .link:hover {
+.navbar__links--container .navbar__links .link:hover {
   font-weight: bolder;
 }
 
-.vine-container {
+.vine__container {
   margin-top: 3rem;
   margin-bottom: 0;
 }
 
-.vine-logo {
+.vine__container--logo {
   display: inline-block;
 }
 
-.vine {
+.vine__container--vine {
   width:1px;
   justify-content: center;
   align-items: center;
@@ -59,12 +57,12 @@
   animation-fill-mode: forwards;
 }
 
-li .dot {
+.vine__container--grapes {
   display: inline-block;
   margin: 2px;
   width: 6px;
   height: 6px;
-  background: rgb(28, 148, 28);
+  background: var(--primary-theme-color);
   border-radius: 45%;
   transition: width 1s ease;
   -webkit-animation: run 3s forwards 3s;
