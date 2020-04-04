@@ -7,31 +7,31 @@ import {
 export default function Navbar() {
   return (
     < nav className="navbar">
-      <ul>
-        <li className="nav-link" id="name">
+      <ul className="navbar__links--container">
+        <li className="navbar__links" id="name">
           <Link to="/" className="link">
             Grapevine
           </Link>
         </li>
       </ul>
-      <ul className="vine-container">
-        <li className="vine-logo">
-          <div className="dot"></div>
-          <div className="dot"></div>
-          <div className="dot"></div>
-          <div className="vine"></div>
-          <div className="dot"></div>
-          <div className="dot"></div>
-          <div className="dot"></div>
+      <ul className="vine__container">
+        <li className="vine__container--logo">
+          <div className="vine__container--grapes"></div>
+          <div className="vine__container--grapes"></div>
+          <div className="vine__container--grapes"></div>
+          <div className="vine__container--vine"></div>
+          <div className="vine__container--grapes"></div>
+          <div className="vine__container--grapes"></div>
+          <div className="vine__container--grapes"></div>
         </li>
       </ul>
-      <ul className="extra-links">
-        <li className="nav-link">
+      <ul className="navbar__links--container">
+        <li className="navbar__links">
           <Link to="/share" className="link">
             Share
           </Link>
         </li>
-        <li className="nav-link">
+        <li className="navbar__links">
           <Link to="/explore" className="link">
             Explore
           </Link>

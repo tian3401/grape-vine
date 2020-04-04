@@ -10,7 +10,7 @@ class Login extends React.Component {
       dataLabel: "",
       dataPoint: "",
       location: "",
-      classValue: "grape"
+      classValue: "form__input--round"
     }
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -32,7 +32,7 @@ class Login extends React.Component {
   }
 
   toggleClass() {
-    let element = (this.state.classValue === "grape") ? "clicked-grape" : "grape";
+    let element = (this.state.classValue === "form__input--round") ? "form__input-round_clicked" : "form__input--round";
     this.setState({
       "classValue": element
     });
@@ -51,7 +51,7 @@ class Login extends React.Component {
         <input type="text" name="dataPoint" className={this.state.classValue}  value={this.state.dataPoint} onChange={this.handleChange}/>
         <label>location:</label>
         <input type="text" name="location" className={this.state.classValue}  value={this.state.location} onChange={this.handleChange}/>
-        <input type="submit" value="Submit"/>
+        <input className="btn__main--round" type="submit" value="Submit"/>
       </form>
     )
   }
