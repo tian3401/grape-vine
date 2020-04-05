@@ -26,8 +26,6 @@ export default function App() {
   );
 }
 
-
-
 function CreateRoute(props) {
   return(
     <Route
@@ -37,6 +35,5 @@ function CreateRoute(props) {
     </Route>
   )
 }
-
 
 
