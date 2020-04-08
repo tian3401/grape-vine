@@ -1,7 +1,7 @@
 import React from 'react';
 import '../styles/shareformStyles.css'
 
-class Login extends React.Component {
+class Shareform extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -57,5 +57,5 @@ class Login extends React.Component {
   }
 };
 
-export default Login; 
+export default Shareform; 
 
