@@ -1,0 +1,39 @@
+.form {
+  display: grid;
+  grid-template-columns: 10rem auto;
+  grid-template-rows: repeat(6, auto);
+  justify-content: center;
+  height: 35%;
+  width: 100%;
+}
+
+.form > label {
+  font-size: 1.5rem;
+  text-align: right;
+  margin: auto 0;
+}
+
+.form__input--standard {
+  margin: 0.5rem; 
+  padding: 0.75rem;
+  height: 3rem;
+  width: 15rem; 
+  border: 0.2rem solid rgb(206, 204, 204);
+  border-radius: 25px;
+  outline: none;
+  background: var(--primary-theme-color);
+  color: #ffffff;
+  font-size: 1rem; 
+  font-weight: 800;
+}
+
+input[type="submit"] {
+  grid-column-start: 2;
+  margin: 0.5rem; 
+  height: 2.5rem;
+  width: 15rem;
+  justify-self: center;
+  border: 1px solid #666;
+  border-radius: 25px;
+  outline: none;
+}
