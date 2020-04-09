@@ -1,14 +1,14 @@
 import firebase from 'firebase';
 
 const config = {
-  apiKey: "AIzaSyCSCTJ90on6x8LtmXeRMMgu4kvxVvsTpo0",
-  authDomain: "grapevine-7d5ad.firebaseapp.com",
-  databaseURL: "https://grapevine-7d5ad.firebaseio.com",
-  projectId: "grapevine-7d5ad",
-  storageBucket: "grapevine-7d5ad.appspot.com",
-  messagingSenderId: "569906881624",
-  appId: "1:569906881624:web:d7811c4b5a737914d8d62d",
-  measurementId: "G-3N1ZNG6YEC"
+  apiKey: process.env.REACT_APP_apiKey,
+  authDomain: process.env.REACT_APP_authDomain,
+  databaseURL: process.env.REACT_APP_databaseURL,
+  projectId: process.env.REACT_APP_projectId,
+  storageBucket: process.env.REACT_APP_storageBucket,
+  messagingSenderId: process.env.REACT_APP_messagingSenderId,
+  appId: process.env.REACT_APP_appId,
+  measurementId: process.env.REACT_APP_measurementId
 };
 
 const fireApp = firebase.initializeApp(config);
