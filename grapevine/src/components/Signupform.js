@@ -23,8 +23,8 @@ class Login extends React.Component {
     });
   }
   
-  //todo: verify valid email format
-  authenticateUser = (email) => {
+ 
+  authenticateUserEmail = (email) => {
     const validExp = RegExp('^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$'); 
     return validExp.test(String(email).toLowerCase()); 
   }
@@ -32,7 +32,7 @@ class Login extends React.Component {
   createUser = (e) => {
     e.preventDefault();
 
-    if(!this.authenticateUser(this.state.email)) {
+    if(!this.authenticateUserEmail(this.state.email)) {
       alert('please check your email and ensure it is valid.')
       return; 
     }
