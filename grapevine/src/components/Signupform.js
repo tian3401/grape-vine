@@ -24,12 +24,19 @@ class Login extends React.Component {
   }
   
   //todo: verify valid email format
-  authenticateUser = () => {
-
+  authenticateUser = (email) => {
+    const validExp = RegExp('^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$'); 
+    return validExp.test(String(email).toLowerCase()); 
   }
 
   createUser = (e) => {
     e.preventDefault();
+
+    if(!this.authenticateUser(this.state.email)) {
+      alert('please check your email and ensure it is valid.')
+      return; 
+    }
+
     fireApp.auth().createUserWithEmailAndPassword(this.state.email, this.state.password).catch((err) => {
       let errorCode = err.code,
       errorMessage = err.message; 
