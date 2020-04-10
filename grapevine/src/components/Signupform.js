@@ -51,7 +51,7 @@ class Login extends React.Component {
         <label>email:</label>
         <input type="text" name="email" className="form__input--standard" value={this.state.email} onChange={this.handleChange} />
         <label>password:</label>
-        <input type="text" name="password" className="form__input--standard" value={this.state.password} onChange={this.handleChange} />
+        <input type="password" name="password" className="form__input--standard" value={this.state.password} onChange={this.handleChange} />
         <input type="submit" className="btn__main--round"  value="Open Sesame"/>
       </form>
     )
