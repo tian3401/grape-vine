@@ -3,7 +3,7 @@ import Shareform from '../components/Shareform'
 
 const Share = () => {
   return (
-  <div>
+  <div style={{textAlign: "center"}}>
     <h1 className="content__center--default">Thanks for Sharing</h1>
     <Shareform/>
   </div>
