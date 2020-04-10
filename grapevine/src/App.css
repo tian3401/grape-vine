@@ -44,6 +44,14 @@
   margin: var(--default-margin);
 }
 
+.card__main--default {
+  display: inline-block;
+  border: 2px solid #eee;
+  box-shadow: 0 2px 3px #ccc;
+  padding: 16px;
+  width: 80%;
+}
+
 .message__list--default ul > li {
   list-style-type: none;
   margin: 0.5rem;

@@ -40,19 +40,21 @@ class Shareform extends React.Component {
 
   render() {
     return(
-      <form onSubmit={this.handleSubmit} className="form">
-        <label>name:</label>
-        <input type="text" name="name" className={this.state.classValue} value={this.state.name} onChange={this.handleChange}/>
-        <label>email:</label>
-        <input type="text" name="email" className={this.state.classValue}  value={this.state.email} onChange={this.handleChange}/>
-        <label>data label:</label>
-        <input type="text" name="dataLabel"  className={this.state.classValue} value={this.state.dataLabel} onChange={this.handleChange}/>
-        <label>data point:</label>
-        <input type="text" name="dataPoint" className={this.state.classValue}  value={this.state.dataPoint} onChange={this.handleChange}/>
-        <label>location:</label>
-        <input type="text" name="location" className={this.state.classValue}  value={this.state.location} onChange={this.handleChange}/>
-        <input className="btn__main--round" type="submit" value="Submit"/>
-      </form>
+      <div className="card__main--default">
+        <form onSubmit={this.handleSubmit} className="form">
+          <label>name:</label>
+          <input type="text" name="name" className={this.state.classValue} value={this.state.name} onChange={this.handleChange}/>
+          <label>email:</label>
+          <input type="text" name="email" className={this.state.classValue}  value={this.state.email} onChange={this.handleChange}/>
+          <label>data label:</label>
+          <input type="text" name="dataLabel"  className={this.state.classValue} value={this.state.dataLabel} onChange={this.handleChange}/>
+          <label>data point:</label>
+          <input type="text" name="dataPoint" className={this.state.classValue}  value={this.state.dataPoint} onChange={this.handleChange}/>
+          <label>location:</label>
+          <input type="text" name="location" className={this.state.classValue}  value={this.state.location} onChange={this.handleChange}/>
+          <input className="btn__main--round" type="submit" value="Submit"/>
+        </form>
+      </div>
     )
   }
 };
