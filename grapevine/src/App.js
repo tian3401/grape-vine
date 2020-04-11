@@ -3,12 +3,12 @@ import './App.css';
 import Navbar from './components/Navbar' 
 import {
   BrowserRouter as Router,
-  Switch,
-  Route,
+  Switch
 } from 'react-router-dom'; 
 import Share from './pages/Share';
 import Home from './pages/Home';
 import Explore from './pages/Explore'
+import CreateRoute from './components/Routes';
 
 
 export default function App() {
@@ -26,14 +26,6 @@ export default function App() {
   );
 }
 
-function CreateRoute(props) {
-  return(
-    <Route
-      path={props.path}
-    >
-      {props.components}
-    </Route>
-  )
-}
+
 
 
