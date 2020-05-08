@@ -1,17 +1,16 @@
 import React from 'react';
 import './App.css';
-import Navbar from './components/Navbar' 
 import {
   BrowserRouter as Router,
-  Switch
+  Switch,
 } from 'react-router-dom'; 
-import Share from './pages/Share';
 import Home from './pages/Home';
-import Explore from './pages/Explore'
-import CreateRoute from './components/Routes';
+import Share from './pages/Share';
+import Explore from './pages/Explore';
+import { Navbar, CreateRoute } from './components/index';
 
+const App = () => {
 
-export default function App() {
   return (
     <div className="App">
       <Router>
@@ -25,6 +24,10 @@ export default function App() {
     </div>
   );
 }
+
+
+export default App; 
+
 
 
 

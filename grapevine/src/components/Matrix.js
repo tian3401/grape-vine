@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/matrixStyles.css';
+import '../styles/matrixStyles.modules.css';
 
 const Box = (props) => {
   return (

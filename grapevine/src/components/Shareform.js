@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/shareformStyles.css'
+import '../styles/shareformStyles.modules.css'
 
 class Shareform extends React.Component {
   constructor(props) {

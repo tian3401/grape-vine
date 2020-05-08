@@ -1,5 +1,5 @@
 import React from 'react';
-import Matrix from '../components/Matrix';
+import { Matrix } from '../components/index';
 
 export default function Home() {
   return(

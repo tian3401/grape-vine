@@ -1,5 +1,5 @@
 import React from "react"; 
-import Shareform from '../components/Shareform'
+import { Shareform } from '../components/index'
 
 const Share = () => {
   return (

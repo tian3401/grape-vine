@@ -1,8 +1,8 @@
 import React from 'react';
-import '../styles/formStyles.css';
-import fireApp from '../config/firebase';
+import '../styles/formStyles.modules.css';
+// import FireApp from '../config/firebase';
 
-class Login extends React.Component {
+class SignupForm extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -23,9 +23,8 @@ class Login extends React.Component {
     });
   }
   
- 
   authenticateUserEmail = (email) => {
-    const validExp = RegExp('^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$'); 
+    const validExp = RegExp('^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+[a-zA-Z0-9-.]+$'); 
     return validExp.test(String(email).toLowerCase()); 
   }
 
@@ -37,7 +36,7 @@ class Login extends React.Component {
       return; 
     }
 
-    fireApp.auth().createUserWithEmailAndPassword(this.state.email, this.state.password).catch((err) => {
+    this.props.firebase.auth.createUserWithEmailAndPassword(this.state.email, this.state.password).catch((err) => {
       let errorCode = err.code,
       errorMessage = err.message; 
       console.log('This is the error code: ',errorCode);
@@ -69,4 +68,4 @@ class Login extends React.Component {
 
 };
 
-export default Login; 
+export default SignupForm; 
